@@ -55,7 +55,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func messageItemClicked(button: UIButton) {
-        print("button clikced")
+        print("button clicked")
     }
     
     

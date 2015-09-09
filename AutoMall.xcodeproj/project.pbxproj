@@ -16,9 +16,10 @@
 		52343F441B99895800E0A977 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52343F431B99895800E0A977 /* SearchViewController.swift */; };
 		52343F461B99896800E0A977 /* ShopCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52343F451B99896800E0A977 /* ShopCarViewController.swift */; };
 		52343F481B99897800E0A977 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52343F471B99897800E0A977 /* SortViewController.swift */; };
-		52F9FD871BA00B840067C498 /* JTImagePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F9FD831BA00B840067C498 /* JTImagePageView.m */; };
-		52F9FD881BA00B840067C498 /* JTImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F9FD851BA00B840067C498 /* JTImageViewCell.m */; };
-		52F9FD891BA00B840067C498 /* JTImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F9FD861BA00B840067C498 /* JTImageViewCell.xib */; };
+		52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E001BA0145C004B8D3E /* JTImagePageView.m */; };
+		52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E021BA0145C004B8D3E /* JTImageViewCell.m */; };
+		52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */; };
+		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoMall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E796A3DBBE210B9D6104609 /* Pods-AutoMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.debug.xcconfig"; sourceTree = "<group>"; };
 		5206E8891B94325B000F46B6 /* AutoMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206E88C1B94325B000F46B6 /* AMAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAppDelegate.swift; sourceTree = "<group>"; };
 		5206E88E1B94325B000F46B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../MainViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +48,14 @@
 		52343F431B99895800E0A977 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		52343F451B99896800E0A977 /* ShopCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarViewController.swift; sourceTree = "<group>"; };
 		52343F471B99897800E0A977 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		52AB6DFF1BA0145C004B8D3E /* JTImagePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTImagePageView.h; sourceTree = "<group>"; };
+		52AB6E001BA0145C004B8D3E /* JTImagePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImagePageView.m; sourceTree = "<group>"; };
+		52AB6E011BA0145C004B8D3E /* JTImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTImageViewCell.h; sourceTree = "<group>"; };
+		52AB6E021BA0145C004B8D3E /* JTImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImageViewCell.m; sourceTree = "<group>"; };
+		52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTImageViewCell.xib; sourceTree = "<group>"; };
+		52AB6E071BA0147C004B8D3E /* AutoMall-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoMall-Bridging-Header.h"; sourceTree = "<group>"; };
 		52F9FD801B9FDC480067C498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = AutoMall/Base.lproj/AMProductCollectionCell.swift; sourceTree = SOURCE_ROOT; };
-		52F9FD821BA00B840067C498 /* JTImagePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTImagePageView.h; sourceTree = "<group>"; };
-		52F9FD831BA00B840067C498 /* JTImagePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImagePageView.m; sourceTree = "<group>"; };
-		52F9FD841BA00B840067C498 /* JTImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTImageViewCell.h; sourceTree = "<group>"; };
-		52F9FD851BA00B840067C498 /* JTImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImageViewCell.m; sourceTree = "<group>"; };
-		52F9FD861BA00B840067C498 /* JTImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTImageViewCell.xib; sourceTree = "<group>"; };
+		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 				5206E88B1B94325B000F46B6 /* AutoMall */,
 				5206E8A01B94325B000F46B6 /* AutoMallTests */,
 				5206E88A1B94325B000F46B6 /* Products */,
+				9330753642AD30448769E970 /* Pods */,
+				CFE29BD7059DF73CC82876F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +121,7 @@
 		52343F351B9985E900E0A977 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				52F9FD811BA00B840067C498 /* JTImagePageView */,
+				52AB6DFE1BA0145C004B8D3E /* JTImagePageView */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 		52343F361B9985E900E0A977 /* OtherSource */ = {
 			isa = PBXGroup;
 			children = (
+				52AB6E071BA0147C004B8D3E /* AutoMall-Bridging-Header.h */,
 				5206E8931B94325B000F46B6 /* Assets.xcassets */,
 				5206E8981B94325B000F46B6 /* Info.plist */,
 			);
@@ -188,6 +197,18 @@
 			path = SortViewController;
 			sourceTree = "<group>";
 		};
+		52AB6DFE1BA0145C004B8D3E /* JTImagePageView */ = {
+			isa = PBXGroup;
+			children = (
+				52AB6DFF1BA0145C004B8D3E /* JTImagePageView.h */,
+				52AB6E001BA0145C004B8D3E /* JTImagePageView.m */,
+				52AB6E011BA0145C004B8D3E /* JTImageViewCell.h */,
+				52AB6E021BA0145C004B8D3E /* JTImageViewCell.m */,
+				52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */,
+			);
+			path = JTImagePageView;
+			sourceTree = "<group>";
+		};
 		52F9FD7D1B9FDC280067C498 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,16 +225,21 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
-		52F9FD811BA00B840067C498 /* JTImagePageView */ = {
+		9330753642AD30448769E970 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52F9FD821BA00B840067C498 /* JTImagePageView.h */,
-				52F9FD831BA00B840067C498 /* JTImagePageView.m */,
-				52F9FD841BA00B840067C498 /* JTImageViewCell.h */,
-				52F9FD851BA00B840067C498 /* JTImageViewCell.m */,
-				52F9FD861BA00B840067C498 /* JTImageViewCell.xib */,
+				4E796A3DBBE210B9D6104609 /* Pods-AutoMall.debug.xcconfig */,
+				A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */,
 			);
-			path = JTImagePageView;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFE29BD7059DF73CC82876F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5206E8A61B94325B000F46B6 /* Build configuration list for PBXNativeTarget "AutoMall" */;
 			buildPhases = (
+				60DD8651597E0319FAE8ED76 /* Check Pods Manifest.lock */,
 				5206E8851B94325B000F46B6 /* Sources */,
 				5206E8861B94325B000F46B6 /* Frameworks */,
 				5206E8871B94325B000F46B6 /* Resources */,
+				D60D901E6A419568F6BC08DD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +288,8 @@
 		5206E8811B94325B000F46B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ZookParts;
 				TargetAttributes = {
@@ -296,7 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F9FD891BA00B840067C498 /* JTImageViewCell.xib in Resources */,
+				52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */,
 				5206E8941B94325B000F46B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +340,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60DD8651597E0319FAE8ED76 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D60D901E6A419568F6BC08DD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5206E8851B94325B000F46B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,10 +381,10 @@
 				52343F441B99895800E0A977 /* SearchViewController.swift in Sources */,
 				52343F461B99896800E0A977 /* ShopCarViewController.swift in Sources */,
 				5206E88F1B94325B000F46B6 /* MainViewController.swift in Sources */,
-				52F9FD881BA00B840067C498 /* JTImageViewCell.m in Sources */,
+				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
-				52F9FD871BA00B840067C498 /* JTImagePageView.m in Sources */,
+				52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */,
 				52343F3F1B99893100E0A977 /* HomeViewController.swift in Sources */,
 				52343F421B99894900E0A977 /* MineViewController.swift in Sources */,
 			);
@@ -440,6 +503,7 @@
 		};
 		5206E8A71B94325B000F46B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E796A3DBBE210B9D6104609 /* Pods-AutoMall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoMall/Info.plist;
@@ -447,11 +511,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZookParts.AutoMall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoMall/OtherSource/AutoMall-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		5206E8A81B94325B000F46B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoMall/Info.plist;
@@ -459,11 +525,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZookParts.AutoMall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AutoMall/OtherSource/AutoMall-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		5206E8AA1B94325B000F46B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E796A3DBBE210B9D6104609 /* Pods-AutoMall.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AutoMallTests/Info.plist;
@@ -476,6 +544,7 @@
 		};
 		5206E8AB1B94325B000F46B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AutoMallTests/Info.plist;

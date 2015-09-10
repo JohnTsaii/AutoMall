@@ -19,6 +19,8 @@
 		52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E001BA0145C004B8D3E /* JTImagePageView.m */; };
 		52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E021BA0145C004B8D3E /* JTImageViewCell.m */; };
 		52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */; };
+		52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */; };
+		52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */; };
 		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +56,8 @@
 		52AB6E021BA0145C004B8D3E /* JTImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImageViewCell.m; sourceTree = "<group>"; };
 		52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JTImageViewCell.xib; sourceTree = "<group>"; };
 		52AB6E071BA0147C004B8D3E /* AutoMall-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoMall-Bridging-Header.h"; sourceTree = "<group>"; };
-		52F9FD801B9FDC480067C498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = AutoMall/Base.lproj/AMProductCollectionCell.swift; sourceTree = SOURCE_ROOT; };
+		52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMHTTPRequest.swift; sourceTree = "<group>"; };
+		52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProductCollectionCell.swift; sourceTree = "<group>"; };
 		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +103,7 @@
 		5206E88B1B94325B000F46B6 /* AutoMall */ = {
 			isa = PBXGroup;
 			children = (
+				52AB6E081BA01A76004B8D3E /* GlobalClass */,
 				52F9FD7D1B9FDC280067C498 /* CustomViews */,
 				52343F351B9985E900E0A977 /* Library */,
 				52343F361B9985E900E0A977 /* OtherSource */,
@@ -209,6 +213,14 @@
 			path = JTImagePageView;
 			sourceTree = "<group>";
 		};
+		52AB6E081BA01A76004B8D3E /* GlobalClass */ = {
+			isa = PBXGroup;
+			children = (
+				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
+			);
+			path = GlobalClass;
+			sourceTree = "<group>";
+		};
 		52F9FD7D1B9FDC280067C498 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +232,7 @@
 		52F9FD7E1B9FDC280067C498 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				52F9FD7F1B9FDC480067C498 /* AMProductCollectionCell.swift */,
+				52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -385,8 +397,10 @@
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */,
+				52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */,
 				52343F3F1B99893100E0A977 /* HomeViewController.swift in Sources */,
 				52343F421B99894900E0A977 /* MineViewController.swift in Sources */,
+				52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +421,6 @@
 			targetProxy = 5206E89E1B94325B000F46B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		52F9FD7F1B9FDC480067C498 /* AMProductCollectionCell.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52F9FD801B9FDC480067C498 /* Base */,
-			);
-			name = AMProductCollectionCell.swift;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5206E8A41B94325B000F46B6 /* Debug */ = {

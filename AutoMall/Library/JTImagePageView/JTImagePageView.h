@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef  void (^DidSelectedImage)(NSUInteger index);
+
 @class JTImagePageView;
 
 @protocol JTImagePageViewDelegate
@@ -31,9 +33,22 @@
  */
 @property (nonatomic, assign) id<JTImagePageViewDelegate> delegate;
 
+@property (nonatomic, copy) DidSelectedImage didSelectedImage;
+
 /**
  *  reload imagePageView data
  */
 - (void)reloadData;
+
+/**
+ *  init with frame
+ *
+ *  @param frame the view frame
+ *
+ *  @return the view by frame
+ */
+- (instancetype)initWithFrame:(CGRect)frame;
+
+- (instancetype)init;
 
 @end

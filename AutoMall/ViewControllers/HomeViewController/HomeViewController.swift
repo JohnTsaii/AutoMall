@@ -8,13 +8,18 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    let productCellIdentifier = "AMProductCollectionCell"
+    let commonCell = "UICollectionViewCell"
     
     var collectionView: UICollectionView?
+    var imagePageView: JTImagePageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.createPageImageView()
         self.setNavBarLayout()
         self.createCollectionView()
     }
@@ -28,12 +33,19 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
     }
     
-    func createCollectionView() {
+    private func createPageImageView() {
+        self.imagePageView? = JTImagePageView(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200))
+    }
+    
+    private func createCollectionView() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         self.collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
         self.view.addSubview(self.collectionView!)
+        
+        self.collectionView?.registerClass(AMProductCollectionCell.self, forCellWithReuseIdentifier: productCellIdentifier)
+        self.collectionView?.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: commonCell)
     }
     
     private func setNavBarLayout() {
@@ -61,11 +73,55 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // MARK: UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 0 {return 8}
+        if section == 1 {return 4}
         return 10
     }
     
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 4
+    }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        if indexPath.section == 0 {
+            let cell: UICollectionViewCell = collectionView .dequeueReusableCellWithReuseIdentifier(commonCell, forIndexPath: indexPath)
+            
+            if indexPath.row == 0 {
+//                cell.contentView.addSubview(self.imagePageView!)
+                return cell
+            }
+            
+            if indexPath.row >= 1 && indexPath.row <= 4{
+                let imageViewWidth = CGRectGetWidth(cell.contentView.frame)
+                let imageView: UIImageView = UIImageView(frame: CGRectMake(0, 0, imageViewWidth, imageViewWidth))
+                cell.contentView.addSubview(imageView)
+                
+                let title: UILabel = UILabel(frame: CGRectMake(0, imageViewWidth, imageViewWidth, 15))
+                title.textColor = UIColor.grayColor()
+                cell.contentView.addSubview(title)
+                
+                switch indexPath.row {
+                    case 1:
+                        title.text = "正配自营"
+                    case 2:
+                        title.text = "厂家直营"
+                    case 3:
+                        title.text = "秒杀"
+                    default:
+                        title.text = "团购"
+                }
+            }
+            
+            let imageView: UIImageView = UIImageView(frame: cell.contentView.frame)
+            imageView.backgroundColor = UIColor.redColor()
+            cell.contentView.addSubview(imageView)
+        }
+        
+        let cell: AMProductCollectionCell! = collectionView.dequeueReusableCellWithReuseIdentifier(productCellIdentifier, forIndexPath: indexPath) as? AMProductCollectionCell
+        
+        cell.configCell()
+        
+        return cell
     }
     
     // MARK: UICollectionViewDelegate

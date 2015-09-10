@@ -107,6 +107,9 @@ static NSString *const identifier = @"JTImageViewCellID";
 #pragma mark UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
         [self.delegate imagePageView:self didSelectIndex:indexPath.row - 1];
+    
+    if (self.didSelectedImage)
+        self.didSelectedImage(indexPath.row - 1);
 }
 
 /**

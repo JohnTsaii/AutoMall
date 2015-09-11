@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //TODO:测试push
         createPageImageView()
         setNavBarLayout()
         createCollectionView()

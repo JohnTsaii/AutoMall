@@ -40,15 +40,15 @@ typedef  void (^DidSelectedImage)(NSUInteger index);
  */
 - (void)reloadData;
 
-/**
- *  init with frame
- *
- *  @param frame the view frame
- *
- *  @return the view by frame
- */
-- (instancetype)initWithFrame:(CGRect)frame;
-
-- (instancetype)init;
+///**
+// *  init with frame
+// *
+// *  @param frame the view frame
+// *
+// *  @return the view by frame
+// */
+//- (instancetype)initWithFrame:(CGRect)frame;
+//
+//- (instancetype)init;
 
 @end

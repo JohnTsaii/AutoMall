@@ -24,6 +24,10 @@ class AMAppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         self.window?.frame = UIScreen.mainScreen().bounds
         
+        // start afnetworking debug mode logger
+        AFNetworkActivityLogger.sharedLogger().level = AFHTTPRequestLoggerLevel.AFLoggerLevelDebug
+        AFNetworkActivityLogger.sharedLogger().startLogging()
+        
         return true
     }
 

@@ -14,14 +14,15 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     let commonCell = "UICollectionViewCell"
     
     var collectionView: UICollectionView?
-    var imagePageView: JTImagePageView!
+    var imagePageView: JTImagePageView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.createPageImageView()
-        self.setNavBarLayout()
-        self.createCollectionView()
+        createPageImageView()
+        setNavBarLayout()
+        createCollectionView()
+        getData()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -34,7 +35,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     private func createPageImageView() {
-        self.imagePageView? = JTImagePageView(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200))
+        self.imagePageView = JTImagePageView(frame: CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200))
+        
+        self.imagePageView?.images = [
+            UIImage(named: "home_direct")!,
+            UIImage(named: "home_group")!,
+            UIImage(named: "home_item_selected")!,
+            UIImage(named: "home_item_unselected")!
+        ]
     }
     
     private func createCollectionView() {
@@ -42,10 +50,21 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
+        self.collectionView?.backgroundColor = UIColor.whiteColor()
+        self.collectionView?.showsHorizontalScrollIndicator = false
         self.view.addSubview(self.collectionView!)
         
         self.collectionView?.registerClass(AMProductCollectionCell.self, forCellWithReuseIdentifier: productCellIdentifier)
         self.collectionView?.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: commonCell)
+    }
+    
+    func getData() {
+        AMHTTPRequest.sharedManager.GET("mobile/index", parameters: nil,
+            success: { (let operation: AFHTTPRequestOperation!, let responseObject: AnyObject!) -> Void in
+                
+            }) { (let operation: AFHTTPRequestOperation!, let error: NSError!) -> Void in
+                
+        }
     }
     
     private func setNavBarLayout() {
@@ -87,7 +106,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             let cell: UICollectionViewCell = collectionView .dequeueReusableCellWithReuseIdentifier(commonCell, forIndexPath: indexPath)
             
             if indexPath.row == 0 {
-//                cell.contentView.addSubview(self.imagePageView!)
+                cell.contentView.addSubview(self.imagePageView!)
+                self.imagePageView?.backgroundColor = UIColor.whiteColor()
                 return cell
             }
             
@@ -118,7 +138,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         
         let cell: AMProductCollectionCell! = collectionView.dequeueReusableCellWithReuseIdentifier(productCellIdentifier, forIndexPath: indexPath) as? AMProductCollectionCell
-        
+        cell.backgroundColor = UIColor.redColor()
         cell.configCell()
         
         return cell
@@ -131,15 +151,22 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 80, height: 80)
+        if indexPath.section == 0 {
+            if indexPath.row == 0 { return CGSizeMake(CGRectGetWidth(self.view.frame) - 1, 200) }
+            if indexPath.row >= 1 && indexPath.row <= 4 { return CGSizeMake(CGRectGetWidth(self.view.frame) / 4 - 1, 80) }
+        
+            return CGSizeMake(CGRectGetWidth(self.view.frame) / 3 - 1, 80)
+        }
+        
+        return CGSizeMake(CGRectGetWidth(self.view.frame) / 3 - 1, 80)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 1
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {

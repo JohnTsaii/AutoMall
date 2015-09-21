@@ -21,6 +21,8 @@
 		52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AB6E031BA0145C004B8D3E /* JTImageViewCell.xib */; };
 		52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */; };
 		52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */; };
+		52AB6E0F1BA52B39004B8D3E /* AMHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E0E1BA52B39004B8D3E /* AMHomeModel.swift */; };
+		52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E101BA5B62B004B8D3E /* AMProduct.swift */; };
 		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		52AB6E071BA0147C004B8D3E /* AutoMall-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoMall-Bridging-Header.h"; sourceTree = "<group>"; };
 		52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMHTTPRequest.swift; sourceTree = "<group>"; };
 		52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProductCollectionCell.swift; sourceTree = "<group>"; };
+		52AB6E0E1BA52B39004B8D3E /* AMHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMHomeModel.swift; sourceTree = "<group>"; };
+		52AB6E101BA5B62B004B8D3E /* AMProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProduct.swift; sourceTree = "<group>"; };
 		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 		5206E88B1B94325B000F46B6 /* AutoMall */ = {
 			isa = PBXGroup;
 			children = (
+				52AB6E0D1BA2BDB0004B8D3E /* Model */,
 				52AB6E081BA01A76004B8D3E /* GlobalClass */,
 				52F9FD7D1B9FDC280067C498 /* CustomViews */,
 				52343F351B9985E900E0A977 /* Library */,
@@ -219,6 +224,15 @@
 				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
 			);
 			path = GlobalClass;
+			sourceTree = "<group>";
+		};
+		52AB6E0D1BA2BDB0004B8D3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52AB6E0E1BA52B39004B8D3E /* AMHomeModel.swift */,
+				52AB6E101BA5B62B004B8D3E /* AMProduct.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		52F9FD7D1B9FDC280067C498 /* CustomViews */ = {
@@ -394,10 +408,12 @@
 				52343F461B99896800E0A977 /* ShopCarViewController.swift in Sources */,
 				5206E88F1B94325B000F46B6 /* MainViewController.swift in Sources */,
 				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
+				52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */,
 				52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */,
+				52AB6E0F1BA52B39004B8D3E /* AMHomeModel.swift in Sources */,
 				52343F3F1B99893100E0A977 /* HomeViewController.swift in Sources */,
 				52343F421B99894900E0A977 /* MineViewController.swift in Sources */,
 				52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */,

@@ -13,10 +13,6 @@ enum MineCellType : Int {
 }
 
 class MineTableModel: NSObject {
-
-//    override init() {
-//        super.init()
-//    }
     var identifier: String?
     var title: String?
     var descTitle: String?
@@ -62,6 +58,7 @@ class MineViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")!
+        
         return cell
     }
     
@@ -72,4 +69,9 @@ class MineViewController: UITableViewController {
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 50
     }
+    
+    override func tableView(tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
 }

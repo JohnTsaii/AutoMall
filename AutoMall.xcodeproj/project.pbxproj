@@ -24,6 +24,13 @@
 		52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E101BA5B62B004B8D3E /* AMProduct.swift */; };
 		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
 		D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092FB1A1BB38B6E00162251 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D092FB1D1BB38F7500162251 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D092FB211BB398DA00162251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB201BB398DA00162251 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092FB261BB3A08F00162251 /* MineHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		D0BA7DEE1BB3C3C500AE3343 /* MineOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DEC1BB3C3C500AE3343 /* MineOrderCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D0BA7DEF1BB3C3C500AE3343 /* MineOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BA7DED1BB3C3C500AE3343 /* MineOrderCell.xib */; settings = {ASSET_TAGS = (); }; };
+		D0BA7DF21BB3C3D900AE3343 /* MineCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DF01BB3C3D900AE3343 /* MineCommonCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D0BA7DF31BB3C3D900AE3343 /* MineCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BA7DF11BB3C3D900AE3343 /* MineCommonCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		52AB6E101BA5B62B004B8D3E /* AMProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProduct.swift; sourceTree = "<group>"; };
 		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
 		D092FB1A1BB38B6E00162251 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D092FB201BB398DA00162251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D092FB261BB3A08F00162251 /* MineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		D0BA7DEC1BB3C3C500AE3343 /* MineOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineOrderCell.swift; sourceTree = "<group>"; };
+		D0BA7DED1BB3C3C500AE3343 /* MineOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineOrderCell.xib; sourceTree = "<group>"; };
+		D0BA7DF01BB3C3D900AE3343 /* MineCommonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineCommonCell.swift; sourceTree = "<group>"; };
+		D0BA7DF11BB3C3D900AE3343 /* MineCommonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCommonCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,8 @@
 				52343F361B9985E900E0A977 /* OtherSource */,
 				52343F371B9985E900E0A977 /* ViewControllers */,
 				5206E88C1B94325B000F46B6 /* AMAppDelegate.swift */,
+				D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */,
+				D092FB201BB398DA00162251 /* Main.storyboard */,
 			);
 			path = AutoMall;
 			sourceTree = "<group>";
@@ -169,6 +185,7 @@
 		52343F3A1B99891700E0A977 /* MineVIewController */ = {
 			isa = PBXGroup;
 			children = (
+				D092FB221BB3A04C00162251 /* components */,
 				52343F411B99894900E0A977 /* MineViewController.swift */,
 			);
 			path = MineVIewController;
@@ -268,6 +285,18 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
+		D092FB221BB3A04C00162251 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				D0BA7DF01BB3C3D900AE3343 /* MineCommonCell.swift */,
+				D0BA7DF11BB3C3D900AE3343 /* MineCommonCell.xib */,
+				D0BA7DEC1BB3C3C500AE3343 /* MineOrderCell.swift */,
+				D0BA7DED1BB3C3C500AE3343 /* MineOrderCell.xib */,
+				D092FB261BB3A08F00162251 /* MineHeaderView.swift */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,8 +381,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BA7DEF1BB3C3C500AE3343 /* MineOrderCell.xib in Resources */,
+				D0BA7DF31BB3C3D900AE3343 /* MineCommonCell.xib in Resources */,
+				D092FB1D1BB38F7500162251 /* Launch Screen.storyboard in Resources */,
 				52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */,
 				5206E8941B94325B000F46B6 /* Assets.xcassets in Resources */,
+				D092FB211BB398DA00162251 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,11 +438,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52343F441B99895800E0A977 /* SearchViewController.swift in Sources */,
+				D0BA7DF21BB3C3D900AE3343 /* MineCommonCell.swift in Sources */,
 				D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */,
 				52343F461B99896800E0A977 /* ShopCarViewController.swift in Sources */,
+				D0BA7DEE1BB3C3C500AE3343 /* MineOrderCell.swift in Sources */,
 				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
 				52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
+				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */,
 				52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */,

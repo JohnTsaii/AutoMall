@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206E88C1B94325B000F46B6 /* AMAppDelegate.swift */; };
-		5206E88F1B94325B000F46B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206E88E1B94325B000F46B6 /* MainViewController.swift */; };
 		5206E8941B94325B000F46B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206E8931B94325B000F46B6 /* Assets.xcassets */; };
 		5206E8A21B94325B000F46B6 /* AutoMallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206E8A11B94325B000F46B6 /* AutoMallTests.swift */; };
 		52343F3F1B99893100E0A977 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52343F3E1B99893100E0A977 /* HomeViewController.swift */; };
@@ -22,6 +21,7 @@
 		52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */; };
 		52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */; };
 		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
+		D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092FB1A1BB38B6E00162251 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		4E796A3DBBE210B9D6104609 /* Pods-AutoMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.debug.xcconfig"; sourceTree = "<group>"; };
 		5206E8891B94325B000F46B6 /* AutoMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206E88C1B94325B000F46B6 /* AMAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAppDelegate.swift; sourceTree = "<group>"; };
-		5206E88E1B94325B000F46B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../MainViewController.swift; sourceTree = "<group>"; };
 		5206E8931B94325B000F46B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		5206E8981B94325B000F46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		5206E89D1B94325B000F46B6 /* AutoMallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoMallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +58,7 @@
 		52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMHTTPRequest.swift; sourceTree = "<group>"; };
 		52AB6E0B1BA121E4004B8D3E /* AMProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProductCollectionCell.swift; sourceTree = "<group>"; };
 		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
+		D092FB1A1BB38B6E00162251 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 		52343F371B9985E900E0A977 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D092FB191BB38B6E00162251 /* MainViewController */,
 				52343F381B99891700E0A977 /* HomeViewController */,
-				52343F391B99891700E0A977 /* MainViewController */,
 				52343F3A1B99891700E0A977 /* MineVIewController */,
 				52343F3B1B99891700E0A977 /* SearchViewController */,
 				52343F3C1B99891700E0A977 /* ShopCarViewController */,
@@ -159,14 +159,6 @@
 				52343F3E1B99893100E0A977 /* HomeViewController.swift */,
 			);
 			path = HomeViewController;
-			sourceTree = "<group>";
-		};
-		52343F391B99891700E0A977 /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5206E88E1B94325B000F46B6 /* MainViewController.swift */,
-			);
-			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		52343F3A1B99891700E0A977 /* MineVIewController */ = {
@@ -252,6 +244,14 @@
 				40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D092FB191BB38B6E00162251 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D092FB1A1BB38B6E00162251 /* MainViewController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52343F441B99895800E0A977 /* SearchViewController.swift in Sources */,
+				D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */,
 				52343F461B99896800E0A977 /* ShopCarViewController.swift in Sources */,
-				5206E88F1B94325B000F46B6 /* MainViewController.swift in Sources */,
 				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,

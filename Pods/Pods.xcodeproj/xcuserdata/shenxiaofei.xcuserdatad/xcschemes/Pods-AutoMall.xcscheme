@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "637FC44B7256C192909E9630"
+               BlueprintIdentifier = "028D8A3530FBB168261B3BC4"
                BuildableName = "libPods-AutoMall.a"
                BlueprintName = "Pods-AutoMall"
                ReferencedContainer = "container:Pods.xcodeproj">

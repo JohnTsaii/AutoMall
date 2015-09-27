@@ -31,16 +31,16 @@ class AMProduct: NSObject {
         self.location = 0
         self.current_price = 0
         self.pid = 0
-        self.p_no = ""
+        self.p_no = nil
         self.alive = 0
         self.type = 0
-        self.limit_count = ""
-        self.limit_price = ""
-        self.shop_name = ""
-        self.img_s = ""
+        self.limit_count = nil
+        self.limit_price = nil
+        self.shop_name = nil
+        self.img_s = nil
         self.price = 0
-        self.name = ""
-        self.datetime = ""
+        self.name = nil
+        self.datetime = nil
         
     }
 }

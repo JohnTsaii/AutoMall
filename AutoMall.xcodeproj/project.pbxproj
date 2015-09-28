@@ -36,6 +36,10 @@
 		D0BA7DF61BB3E6C300AE3343 /* OrderDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DF51BB3E6C300AE3343 /* OrderDoneViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D0BA7DFA1BB3E6F100AE3343 /* OrderDoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DF81BB3E6F100AE3343 /* OrderDoneCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D0BA7DFB1BB3E6F100AE3343 /* OrderDoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BA7DF91BB3E6F100AE3343 /* OrderDoneCell.xib */; settings = {ASSET_TAGS = (); }; };
+		D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C605BE1BB91C0D005E0086 /* PersisFileHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		D0C605C11BB91C0D005E0086 /* PersisUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */; settings = {ASSET_TAGS = (); }; };
+		D0C605C81BB92347005E0086 /* BaseFilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C605C71BB92347005E0086 /* BaseFilePath.swift */; settings = {ASSET_TAGS = (); }; };
+		D0C605CA1BB92708005E0086 /* UserBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C605C91BB92708005E0086 /* UserBase.swift */; settings = {ASSET_TAGS = (); }; };
 		D0CF46E21BB4E9C800DCE007 /* ShopCarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF46E01BB4E9C800DCE007 /* ShopCarCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D0CF46E31BB4E9C800DCE007 /* ShopCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CF46E11BB4E9C800DCE007 /* ShopCarCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -89,6 +93,10 @@
 		D0BA7DF51BB3E6C300AE3343 /* OrderDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDoneViewController.swift; sourceTree = "<group>"; };
 		D0BA7DF81BB3E6F100AE3343 /* OrderDoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDoneCell.swift; sourceTree = "<group>"; };
 		D0BA7DF91BB3E6F100AE3343 /* OrderDoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDoneCell.xib; sourceTree = "<group>"; };
+		D0C605BE1BB91C0D005E0086 /* PersisFileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersisFileHelper.swift; sourceTree = "<group>"; };
+		D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersisUserDefault.swift; sourceTree = "<group>"; };
+		D0C605C71BB92347005E0086 /* BaseFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFilePath.swift; sourceTree = "<group>"; };
+		D0C605C91BB92708005E0086 /* UserBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBase.swift; sourceTree = "<group>"; };
 		D0CF46E01BB4E9C800DCE007 /* ShopCarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarCell.swift; sourceTree = "<group>"; };
 		D0CF46E11BB4E9C800DCE007 /* ShopCarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +255,10 @@
 		52AB6E081BA01A76004B8D3E /* GlobalClass */ = {
 			isa = PBXGroup;
 			children = (
+				D0C605C31BB92305005E0086 /* fileHandle */,
+				D0C605C21BB922F2005E0086 /* lightpersistance */,
+				D0C605AA1BB8D40D005E0086 /* userbase */,
+				D0C605A91BB8D332005E0086 /* api */,
 				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
 			);
 			path = GlobalClass;
@@ -338,6 +350,38 @@
 				D0BA7DF91BB3E6F100AE3343 /* OrderDoneCell.xib */,
 			);
 			name = component;
+			sourceTree = "<group>";
+		};
+		D0C605A91BB8D332005E0086 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		D0C605AA1BB8D40D005E0086 /* userbase */ = {
+			isa = PBXGroup;
+			children = (
+				D0C605C91BB92708005E0086 /* UserBase.swift */,
+			);
+			name = userbase;
+			sourceTree = "<group>";
+		};
+		D0C605C21BB922F2005E0086 /* lightpersistance */ = {
+			isa = PBXGroup;
+			children = (
+				D0C605BE1BB91C0D005E0086 /* PersisFileHelper.swift */,
+				D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */,
+			);
+			name = lightpersistance;
+			sourceTree = "<group>";
+		};
+		D0C605C31BB92305005E0086 /* fileHandle */ = {
+			isa = PBXGroup;
+			children = (
+				D0C605C71BB92347005E0086 /* BaseFilePath.swift */,
+			);
+			name = fileHandle;
 			sourceTree = "<group>";
 		};
 		D0CF46DF1BB4E9A000DCE007 /* component */ = {
@@ -499,8 +543,10 @@
 				D0BA7DEE1BB3C3C500AE3343 /* MineOrderCell.swift in Sources */,
 				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
 				52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */,
+				D0C605C81BB92347005E0086 /* BaseFilePath.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
+				D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */,
 				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				D0BA7DFA1BB3E6F100AE3343 /* OrderDoneCell.swift in Sources */,
@@ -510,6 +556,8 @@
 				52AB6E0F1BA52B39004B8D3E /* AMHomeModel.swift in Sources */,
 				D07E193A1BB50ADE0092C1CE /* ShopCarHeaderFooterView.swift in Sources */,
 				52343F3F1B99893100E0A977 /* HomeViewController.swift in Sources */,
+				D0C605CA1BB92708005E0086 /* UserBase.swift in Sources */,
+				D0C605C11BB91C0D005E0086 /* PersisUserDefault.swift in Sources */,
 				D0CF46E21BB4E9C800DCE007 /* ShopCarCell.swift in Sources */,
 				52343F421B99894900E0A977 /* MineViewController.swift in Sources */,
 				52AB6E0C1BA121E4004B8D3E /* AMProductCollectionCell.swift in Sources */,

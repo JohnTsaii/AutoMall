@@ -133,6 +133,7 @@
 		5206E88B1B94325B000F46B6 /* AutoMall */ = {
 			isa = PBXGroup;
 			children = (
+				D0C605AB1BB8D448005E0086 /* coredata */,
 				D07E193B1BB50BDE0092C1CE /* Extension */,
 				52AB6E0D1BA2BDB0004B8D3E /* Model */,
 				52AB6E081BA01A76004B8D3E /* GlobalClass */,
@@ -245,6 +246,8 @@
 		52AB6E081BA01A76004B8D3E /* GlobalClass */ = {
 			isa = PBXGroup;
 			children = (
+				D0C605AA1BB8D40D005E0086 /* userbase */,
+				D0C605A91BB8D332005E0086 /* api */,
 				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
 			);
 			path = GlobalClass;
@@ -335,6 +338,27 @@
 				D0BA7DF91BB3E6F100AE3343 /* OrderDoneCell.xib */,
 			);
 			name = component;
+			sourceTree = "<group>";
+		};
+		D0C605A91BB8D332005E0086 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		D0C605AA1BB8D40D005E0086 /* userbase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = userbase;
+			sourceTree = "<group>";
+		};
+		D0C605AB1BB8D448005E0086 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = coredata;
 			sourceTree = "<group>";
 		};
 		D0CF46DF1BB4E9A000DCE007 /* component */ = {

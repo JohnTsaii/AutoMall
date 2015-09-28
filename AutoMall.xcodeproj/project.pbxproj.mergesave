@@ -500,8 +500,11 @@
 				52AB6E051BA0145C004B8D3E /* JTImageViewCell.m in Sources */,
 				52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
+=======
 				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,
+>>>>>>> 4a352f352c11f506750a14b9d5da18f95397f4d3
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				D0BA7DFA1BB3E6F100AE3343 /* OrderDoneCell.swift in Sources */,
 				D0BA7DF61BB3E6C300AE3343 /* OrderDoneViewController.swift in Sources */,

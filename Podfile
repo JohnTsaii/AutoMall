@@ -12,7 +12,6 @@ pod 'Masonry'
 pod 'MJRefresh'
 pod 'SDWebImage'
 pod 'SVProgressHUD', '~> 1.1.1'
-pod 'Alamofire', '~> 2.0.2'
 
 end
 

@@ -57,12 +57,12 @@ class MineViewController: UITableViewController {
         
     }
     
-    //MARK: - api
+    //MARK: api
     func loadData(){
         
     }
     
-    //delegate
+    //MARK: delegate
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }

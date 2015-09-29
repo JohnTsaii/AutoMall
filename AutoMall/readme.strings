@@ -1,0 +1,11 @@
+/* 
+  readme.strings
+  AutoMall
+
+  Created by shenxiaofei on 15/9/29.
+  Copyright © 2015年 ZookParts. All rights reserved.
+*/
+//按照时间倒序排列新添加放在文件头部
+
+-sxf ,2015/9/29
+添加了UserBase 存放用户信息相关的类

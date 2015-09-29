@@ -97,6 +97,7 @@
 		D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersisUserDefault.swift; sourceTree = "<group>"; };
 		D0C605C71BB92347005E0086 /* BaseFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFilePath.swift; sourceTree = "<group>"; };
 		D0C605C91BB92708005E0086 /* UserBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBase.swift; sourceTree = "<group>"; };
+		D0CBEA961BBA59A400976B2E /* readme.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = readme.strings; sourceTree = "<group>"; };
 		D0CF46E01BB4E9C800DCE007 /* ShopCarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarCell.swift; sourceTree = "<group>"; };
 		D0CF46E11BB4E9C800DCE007 /* ShopCarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +144,7 @@
 		5206E88B1B94325B000F46B6 /* AutoMall */ = {
 			isa = PBXGroup;
 			children = (
+				D0CBEA961BBA59A400976B2E /* readme.strings */,
 				D07E193B1BB50BDE0092C1CE /* Extension */,
 				52AB6E0D1BA2BDB0004B8D3E /* Model */,
 				52AB6E081BA01A76004B8D3E /* GlobalClass */,
@@ -255,8 +257,7 @@
 		52AB6E081BA01A76004B8D3E /* GlobalClass */ = {
 			isa = PBXGroup;
 			children = (
-				D0C605C31BB92305005E0086 /* fileHandle */,
-				D0C605C21BB922F2005E0086 /* lightpersistance */,
+				D0C605C21BB922F2005E0086 /* LightPersistance */,
 				D0C605AA1BB8D40D005E0086 /* userbase */,
 				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
 			);
@@ -359,21 +360,14 @@
 			name = userbase;
 			sourceTree = "<group>";
 		};
-		D0C605C21BB922F2005E0086 /* lightpersistance */ = {
-			isa = PBXGroup;
-			children = (
-				D0C605BE1BB91C0D005E0086 /* PersisFileHelper.swift */,
-				D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */,
-			);
-			name = lightpersistance;
-			sourceTree = "<group>";
-		};
-		D0C605C31BB92305005E0086 /* fileHandle */ = {
+		D0C605C21BB922F2005E0086 /* LightPersistance */ = {
 			isa = PBXGroup;
 			children = (
 				D0C605C71BB92347005E0086 /* BaseFilePath.swift */,
+				D0C605BE1BB91C0D005E0086 /* PersisFileHelper.swift */,
+				D0C605BF1BB91C0D005E0086 /* PersisUserDefault.swift */,
 			);
-			name = fileHandle;
+			name = LightPersistance;
 			sourceTree = "<group>";
 		};
 		D0CF46DF1BB4E9A000DCE007 /* component */ = {

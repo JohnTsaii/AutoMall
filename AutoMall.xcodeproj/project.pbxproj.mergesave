@@ -258,6 +258,7 @@
 				D0C605C31BB92305005E0086 /* fileHandle */,
 				D0C605C21BB922F2005E0086 /* lightpersistance */,
 				D0C605AA1BB8D40D005E0086 /* userbase */,
+				D0C605A91BB8D332005E0086 /* api */,
 				52AB6E091BA01AD2004B8D3E /* AMHTTPRequest.swift */,
 			);
 			path = GlobalClass;
@@ -349,6 +350,13 @@
 				D0BA7DF91BB3E6F100AE3343 /* OrderDoneCell.xib */,
 			);
 			name = component;
+			sourceTree = "<group>";
+		};
+		D0C605A91BB8D332005E0086 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
 			sourceTree = "<group>";
 		};
 		D0C605AA1BB8D40D005E0086 /* userbase */ = {
@@ -537,8 +545,11 @@
 				52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */,
 				D0C605C81BB92347005E0086 /* BaseFilePath.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
+=======
 				D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */,
+>>>>>>> 6dc37c59ace78b6528cde2cb7fa324f4b22f0f27
 				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,
 				52343F481B99897800E0A977 /* SortViewController.swift in Sources */,
 				D0BA7DFA1BB3E6F100AE3343 /* OrderDoneCell.swift in Sources */,

@@ -59,6 +59,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func getData() {
+        
         AMHTTPRequest.sharedManager.GET("mobile/index", parameters: nil,
             success: { (let operation: AFHTTPRequestOperation!, let responseObject: AnyObject!) -> Void in
                 

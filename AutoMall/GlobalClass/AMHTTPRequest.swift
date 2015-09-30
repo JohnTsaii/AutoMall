@@ -22,9 +22,8 @@ class AMHTTPRequest: AFHTTPRequestOperationManager {
         } else {
             super.init(baseURL: NSURL(string: BaseImageURL))
         }
-        
-        self.requestSerializer = AFHTTPRequestSerializer()
-        self.responseSerializer = AFHTTPResponseSerializer()
+//        self.requestSerializer = AFHTTPRequestSerializer()
+//        self.responseSerializer = AFHTTPResponseSerializer()
     }
     
     

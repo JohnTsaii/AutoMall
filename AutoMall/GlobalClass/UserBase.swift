@@ -63,7 +63,9 @@ class UserBase: NSObject {
             if let status = dict["status"]?.integerValue {
                 if status == 1 {
                     success = true
-                    UserBase.user().token = dict["token"] as? String
+                    if let dataDict = dict["data"] as? NSDictionary {
+                        UserBase.user().token = dataDict["token"] as? String
+                    }
                 } else {
                     //失败
                     if let dataDict = dict["data"] as? NSDictionary {
@@ -77,6 +79,7 @@ class UserBase: NSObject {
                 NSNotificationCenter.defaultCenter().postNotificationName(LoginFailedNotification, object:nil)
                 if let _ = msg {
                     //失败有提示
+                    AMProgressHUD.showFailed(msg!)
                 }
             }
         }) { (let operation:AFHTTPRequestOperation!,let error:NSError!) -> Void in
@@ -84,11 +87,11 @@ class UserBase: NSObject {
         }
     }
     
-    
+    /**
+    注册api
+    */
     class func regist(userName:String,pwd:String) {
         
     }
-    
-    
     
 }

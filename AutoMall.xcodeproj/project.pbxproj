@@ -277,6 +277,7 @@
 		52F9FD7D1B9FDC280067C498 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				D09E1FFE1BBB878000E37FA2 /* waitingView */,
 				52F9FD7E1B9FDC280067C498 /* CustomCell */,
 			);
 			path = CustomViews;
@@ -332,6 +333,13 @@
 				D092FB261BB3A08F00162251 /* MineHeaderView.swift */,
 			);
 			name = components;
+			sourceTree = "<group>";
+		};
+		D09E1FFE1BBB878000E37FA2 /* waitingView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = waitingView;
 			sourceTree = "<group>";
 		};
 		D0BA7DF41BB3E69600AE3343 /* OrderDone */ = {

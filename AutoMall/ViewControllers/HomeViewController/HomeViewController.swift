@@ -27,7 +27,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     override func didReceiveMemoryWarning() {

@@ -29,6 +29,8 @@
 		D092FB1D1BB38F7500162251 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D092FB211BB398DA00162251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB201BB398DA00162251 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092FB261BB3A08F00162251 /* MineHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		D09E200A1BBB8A9F00E37FA2 /* AMProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E20081BBB8A9F00E37FA2 /* AMProgressHUD.swift */; settings = {ASSET_TAGS = (); }; };
+		D09E20311BBBA7A600E37FA2 /* AMProgressHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09E20301BBBA7A600E37FA2 /* AMProgressHUD.xcassets */; settings = {ASSET_TAGS = (); }; };
 		D0BA7DEE1BB3C3C500AE3343 /* MineOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DEC1BB3C3C500AE3343 /* MineOrderCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D0BA7DEF1BB3C3C500AE3343 /* MineOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BA7DED1BB3C3C500AE3343 /* MineOrderCell.xib */; settings = {ASSET_TAGS = (); }; };
 		D0BA7DF21BB3C3D900AE3343 /* MineCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA7DF01BB3C3D900AE3343 /* MineCommonCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -86,6 +88,8 @@
 		D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D092FB201BB398DA00162251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D092FB261BB3A08F00162251 /* MineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		D09E20081BBB8A9F00E37FA2 /* AMProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProgressHUD.swift; sourceTree = "<group>"; };
+		D09E20301BBBA7A600E37FA2 /* AMProgressHUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AMProgressHUD.xcassets; sourceTree = "<group>"; };
 		D0BA7DEC1BB3C3C500AE3343 /* MineOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineOrderCell.swift; sourceTree = "<group>"; };
 		D0BA7DED1BB3C3C500AE3343 /* MineOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineOrderCell.xib; sourceTree = "<group>"; };
 		D0BA7DF01BB3C3D900AE3343 /* MineCommonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineCommonCell.swift; sourceTree = "<group>"; };
@@ -277,7 +281,7 @@
 		52F9FD7D1B9FDC280067C498 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				D09E1FFE1BBB878000E37FA2 /* waitingView */,
+				D09E20071BBB8A9F00E37FA2 /* WatingView */,
 				52F9FD7E1B9FDC280067C498 /* CustomCell */,
 			);
 			path = CustomViews;
@@ -335,11 +339,13 @@
 			name = components;
 			sourceTree = "<group>";
 		};
-		D09E1FFE1BBB878000E37FA2 /* waitingView */ = {
+		D09E20071BBB8A9F00E37FA2 /* WatingView */ = {
 			isa = PBXGroup;
 			children = (
+				D09E20301BBBA7A600E37FA2 /* AMProgressHUD.xcassets */,
+				D09E20081BBB8A9F00E37FA2 /* AMProgressHUD.swift */,
 			);
-			name = waitingView;
+			path = WatingView;
 			sourceTree = "<group>";
 		};
 		D0BA7DF41BB3E69600AE3343 /* OrderDone */ = {
@@ -479,6 +485,7 @@
 				52AB6E061BA0145C004B8D3E /* JTImageViewCell.xib in Resources */,
 				D0BA7DFB1BB3E6F100AE3343 /* OrderDoneCell.xib in Resources */,
 				5206E8941B94325B000F46B6 /* Assets.xcassets in Resources */,
+				D09E20311BBBA7A600E37FA2 /* AMProgressHUD.xcassets in Resources */,
 				D092FB211BB398DA00162251 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09E200A1BBB8A9F00E37FA2 /* AMProgressHUD.swift in Sources */,
 				52343F441B99895800E0A977 /* SearchViewController.swift in Sources */,
 				D0BA7DF21BB3C3D900AE3343 /* MineCommonCell.swift in Sources */,
 				D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */,

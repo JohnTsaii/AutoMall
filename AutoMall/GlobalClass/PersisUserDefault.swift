@@ -10,10 +10,10 @@ import UIKit
 
 class PersisUserDefault: NSObject {
     private static let  userDefault: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-    static func setObj(obj:AnyObject?,forKey key:String) {
+    class func setObj(obj:AnyObject?,forKey key:String) {
         PersisUserDefault.userDefault.setObject(obj, forKey: key)
     }
-    static func objForKey(key:String) -> AnyObject? {
+    class func objForKey(key:String) -> AnyObject? {
         return PersisUserDefault.userDefault.objectForKey(key)
     }
 }

@@ -7,8 +7,9 @@
 */
 //按照时间倒序排列新添加放在文件头部
 
+
 -sxf, 2015/9/30
-添加了HUD视图AMProgressHUD，（等待视图，成功失败状态视图）
+添加了HUD视图AMProgressHUD，（等待视图，成功失败状态视图）,添加了轻量级的本地缓存类PersisFileHelper，PersisUserDefault
 
 -sxf ,2015/9/29
 添加了UserBase 存放用户信息相关的类。

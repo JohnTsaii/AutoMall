@@ -27,6 +27,7 @@ class MineViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         
         //TODO:登录测试代码，使用测试账号登录
         if !UserBase.user().isLogined {

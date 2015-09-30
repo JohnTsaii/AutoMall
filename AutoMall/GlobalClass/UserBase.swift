@@ -82,9 +82,9 @@ class UserBase: NSObject {
                     AMProgressHUD.showFailed(msg!)
                 }
             }
-        }) { (let operation:AFHTTPRequestOperation!,let error:NSError!) -> Void in
+        }, failure: { (let operation:AFHTTPRequestOperation!,let error:NSError!) -> Void in
                 
-        }
+        })
     }
     
     /**

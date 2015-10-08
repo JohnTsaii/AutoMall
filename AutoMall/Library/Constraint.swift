@@ -150,7 +150,11 @@ internal class ConcreteConstraint: Constraint {
         #endif
         let layoutConstraints = self.installInfo!.layoutConstraints.allObjects as! [LayoutConstraint]
         if layoutConstraints.count > 0 {
-            NSLayoutConstraint.activateConstraints(layoutConstraints)
+            if #available(iOS 8.0, *) {
+                NSLayoutConstraint.activateConstraints(layoutConstraints)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
@@ -165,7 +169,11 @@ internal class ConcreteConstraint: Constraint {
         #endif
         let layoutConstraints = self.installInfo!.layoutConstraints.allObjects as! [LayoutConstraint]
         if layoutConstraints.count > 0 {
-            NSLayoutConstraint.deactivateConstraints(layoutConstraints)
+            if #available(iOS 8.0, *) {
+                NSLayoutConstraint.deactivateConstraints(layoutConstraints)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     

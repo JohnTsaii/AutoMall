@@ -54,6 +54,9 @@
 		D082B9731BC659FB0029391C /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9661BC659FB0029391C /* SnapKit.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B9741BC659FB0029391C /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9671BC659FB0029391C /* View+SnapKit.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B9751BC659FB0029391C /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9681BC659FB0029391C /* ViewController+SnapKit.swift */; settings = {ASSET_TAGS = (); }; };
+		D082B9781BC65E610029391C /* ReturnListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9771BC65E610029391C /* ReturnListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D082B97B1BC662950029391C /* ReturnListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B97A1BC662950029391C /* ReturnListCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D082B97D1BC667140029391C /* AMOrderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B97C1BC667140029391C /* AMOrderLine.swift */; settings = {ASSET_TAGS = (); }; };
 		D092FB1B1BB38B6E00162251 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092FB1A1BB38B6E00162251 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D092FB1D1BB38F7500162251 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D092FB211BB398DA00162251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092FB201BB398DA00162251 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -149,6 +152,9 @@
 		D082B9661BC659FB0029391C /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
 		D082B9671BC659FB0029391C /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		D082B9681BC659FB0029391C /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		D082B9771BC65E610029391C /* ReturnListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnListViewController.swift; sourceTree = "<group>"; };
+		D082B97A1BC662950029391C /* ReturnListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnListCell.swift; sourceTree = "<group>"; };
+		D082B97C1BC667140029391C /* AMOrderLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMOrderLine.swift; sourceTree = "<group>"; };
 		D092FB1A1BB38B6E00162251 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D092FB1C1BB38F7500162251 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D092FB201BB398DA00162251 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -282,6 +288,7 @@
 		52343F3A1B99891700E0A977 /* MineVIewController */ = {
 			isa = PBXGroup;
 			children = (
+				D082B9761BC65DC20029391C /* ReturnList */,
 				D082B9451BC63B1F0029391C /* myCollection */,
 				D0BA7DF41BB3E69600AE3343 /* OrderDone */,
 				D092FB221BB3A04C00162251 /* components */,
@@ -347,6 +354,7 @@
 				52AB6E101BA5B62B004B8D3E /* AMProduct.swift */,
 				52AB6E121BB19CA9004B8D3E /* AMAdvertising.swift */,
 				D082B9531BC643C00029391C /* AMShop.swift */,
+				D082B97C1BC667140029391C /* AMOrderLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -458,6 +466,23 @@
 				D082B9681BC659FB0029391C /* ViewController+SnapKit.swift */,
 			);
 			name = SnapKit;
+			sourceTree = "<group>";
+		};
+		D082B9761BC65DC20029391C /* ReturnList */ = {
+			isa = PBXGroup;
+			children = (
+				D082B9791BC6615D0029391C /* component */,
+				D082B9771BC65E610029391C /* ReturnListViewController.swift */,
+			);
+			name = ReturnList;
+			sourceTree = "<group>";
+		};
+		D082B9791BC6615D0029391C /* component */ = {
+			isa = PBXGroup;
+			children = (
+				D082B97A1BC662950029391C /* ReturnListCell.swift */,
+			);
+			name = component;
 			sourceTree = "<group>";
 		};
 		D092FB191BB38B6E00162251 /* MainViewController */ = {
@@ -704,6 +729,7 @@
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
 				D082B9441BC61B480029391C /* UIScreenExtension.swift in Sources */,
 				D082B9421BC619B00029391C /* UIViewFit.swift in Sources */,
+				D082B97D1BC667140029391C /* AMOrderLine.swift in Sources */,
 				D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */,
 				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,
 				D082B96F1BC659FB0029391C /* Debugging.swift in Sources */,
@@ -716,6 +742,7 @@
 				D0BA7DF61BB3E6C300AE3343 /* OrderDoneViewController.swift in Sources */,
 				52AB6E041BA0145C004B8D3E /* JTImagePageView.m in Sources */,
 				52AB6E0A1BA01AD2004B8D3E /* AMHTTPRequest.swift in Sources */,
+				D082B97B1BC662950029391C /* ReturnListCell.swift in Sources */,
 				D082B9561BC648B10029391C /* MyCollectionProductCell.swift in Sources */,
 				52AB6E0F1BA52B39004B8D3E /* AMHomeModel.swift in Sources */,
 				D082B9751BC659FB0029391C /* ViewController+SnapKit.swift in Sources */,
@@ -726,6 +753,7 @@
 				D082B9481BC63B3C0029391C /* MyCollectionViewController.swift in Sources */,
 				D082B9591BC651D10029391C /* MyStoryboard.swift in Sources */,
 				D0C605CA1BB92708005E0086 /* UserBase.swift in Sources */,
+				D082B9781BC65E610029391C /* ReturnListViewController.swift in Sources */,
 				D0C605C11BB91C0D005E0086 /* PersisUserDefault.swift in Sources */,
 				D0CF46E21BB4E9C800DCE007 /* ShopCarCell.swift in Sources */,
 				52343F421B99894900E0A977 /* MineViewController.swift in Sources */,

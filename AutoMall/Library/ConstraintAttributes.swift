@@ -133,40 +133,44 @@ internal struct ConstraintAttributes: OptionSetType, BooleanType {
             attrs.append(.Baseline)
         }
         
-        #if os(iOS) || os(tvOS)
-        #if SNAPKIT_DEPLOYMENT_LEGACY
-        guard #available(iOS 8.0, *) else {
-            return attrs
+        if #available(iOS 8.0, *) {
+            #if os(iOS) || os(tvOS)
+            #if SNAPKIT_DEPLOYMENT_LEGACY
+            guard #available(iOS 8.0, *) else {
+                return attrs
+            }
+            #endif
+            if (self.contains(ConstraintAttributes.FirstBaseline)) {
+                attrs.append(.FirstBaseline)
+            }
+            if (self.contains(ConstraintAttributes.LeftMargin)) {
+                attrs.append(.LeftMargin)
+            }
+            if (self.contains(ConstraintAttributes.RightMargin)) {
+                attrs.append(.RightMargin)
+            }
+            if (self.contains(ConstraintAttributes.TopMargin)) {
+                attrs.append(.TopMargin)
+            }
+            if (self.contains(ConstraintAttributes.BottomMargin)) {
+                attrs.append(.BottomMargin)
+            }
+            if (self.contains(ConstraintAttributes.LeadingMargin)) {
+                attrs.append(.LeadingMargin)
+            }
+            if (self.contains(ConstraintAttributes.TrailingMargin)) {
+                attrs.append(.TrailingMargin)
+            }
+            if (self.contains(ConstraintAttributes.CenterXWithinMargins)) {
+                attrs.append(.CenterXWithinMargins)
+            }
+            if (self.contains(ConstraintAttributes.CenterYWithinMargins)) {
+                attrs.append(.CenterYWithinMargins)
+            }
+            #endif
+        } else {
+            // Fallback on earlier versions
         }
-        #endif
-        if (self.contains(ConstraintAttributes.FirstBaseline)) {
-            attrs.append(.FirstBaseline)
-        }
-        if (self.contains(ConstraintAttributes.LeftMargin)) {
-            attrs.append(.LeftMargin)
-        }
-        if (self.contains(ConstraintAttributes.RightMargin)) {
-            attrs.append(.RightMargin)
-        }
-        if (self.contains(ConstraintAttributes.TopMargin)) {
-            attrs.append(.TopMargin)
-        }
-        if (self.contains(ConstraintAttributes.BottomMargin)) {
-            attrs.append(.BottomMargin)
-        }
-        if (self.contains(ConstraintAttributes.LeadingMargin)) {
-            attrs.append(.LeadingMargin)
-        }
-        if (self.contains(ConstraintAttributes.TrailingMargin)) {
-            attrs.append(.TrailingMargin)
-        }
-        if (self.contains(ConstraintAttributes.CenterXWithinMargins)) {
-            attrs.append(.CenterXWithinMargins)
-        }
-        if (self.contains(ConstraintAttributes.CenterYWithinMargins)) {
-            attrs.append(.CenterYWithinMargins)
-        }
-        #endif
         
         return attrs
     }

@@ -9,8 +9,6 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-    
-    lazy var story: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
 
     lazy var homeVC: HomeViewController = {
         return HomeViewController()
@@ -29,7 +27,7 @@ class MainViewController: UITabBarController {
     }()
     
     lazy var mineVC: MineViewController = {
-        return self.story.instantiateViewControllerWithIdentifier("MineViewController") as! MineViewController
+        return MyStoryboard.sb().instantiateViewControllerWithIdentifier("MineViewController") as! MineViewController
     }()
     
     lazy var homeNav:UINavigationController = {

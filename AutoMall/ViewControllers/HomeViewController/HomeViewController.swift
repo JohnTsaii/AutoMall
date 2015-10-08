@@ -16,9 +16,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var collectionView: UICollectionView?
     var imagePageView: JTImagePageView?
     
+    var data: AMHomeModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TODO:测试push
+        // TODO:测试push
         createPageImageView()
         setNavBarLayout()
         createCollectionView()
@@ -27,6 +29,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
         
     }
     
@@ -62,7 +65,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         AMHTTPRequest.sharedManager.GET("mobile/index", parameters: nil,
             success: { (let operation: AFHTTPRequestOperation!, let responseObject: AnyObject!) -> Void in
-                
+//                self.data = AMHomeModel(keyValues: responseObject)
+//                print(self.data?.status)
             }) { (let operation: AFHTTPRequestOperation!, let error: NSError!) -> Void in
                 
         }

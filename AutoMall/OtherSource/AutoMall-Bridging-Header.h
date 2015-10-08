@@ -12,3 +12,8 @@
 #import <MJExtension/MJExtension.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Masonry/Masonry.h>
+#import "DesignedView.h"
+#import "DesignedButton.h"
+#import "DesignedImageView.h"
+#import "UIView+Designed.h"
+#import "UIView+AwakeNib.h"

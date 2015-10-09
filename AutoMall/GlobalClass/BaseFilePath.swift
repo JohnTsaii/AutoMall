@@ -9,25 +9,17 @@
 import UIKit
 
 class BaseFilePath: NSObject {
-    static func documentDirectory() -> String {
+    class func documentDirectory() -> String {
         let path: String? = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).first
-        if let value = path {
-            return value
-        } else {
-            return ""
-        }
+        return path!
     }
     
-    static func cacheDirectory() -> String {
+    class func cacheDirectory() -> String {
         let path: String? = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).first
-        if let value = path {
-            return value
-        } else {
-            return ""
-        }
+        return path!
     }
     
-    static func tmpDirectory() -> String {
+    class func tmpDirectory() -> String {
         return NSTemporaryDirectory()
     }
 }

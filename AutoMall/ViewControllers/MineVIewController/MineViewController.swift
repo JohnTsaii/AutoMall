@@ -27,6 +27,13 @@ class MineViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
+        
+        //TODO:登录测试代码，使用测试账号登录
+        if !UserBase.user().isLogined {
+            UserBase.login("ceshi", pwd: "123123")
+        }
+        
         configView()
         initTableViewData()
     }
@@ -51,12 +58,12 @@ class MineViewController: UITableViewController {
         
     }
     
-    //MARK: - api
+    //MARK: api
     func loadData(){
         
     }
     
-    //delegate
+    //MARK: delegate
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }

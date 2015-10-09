@@ -22,8 +22,8 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qre-z2-cSE">
-                        <rect key="frame" x="60" y="16" width="25" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="60" y="16" width="27" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -46,6 +46,7 @@
                 <outlet property="leftLb" destination="qre-z2-cSE" id="mhb-9D-xnR"/>
                 <outlet property="rightLb" destination="rEC-Mb-Lxo" id="GB1-2B-IqI"/>
             </connections>
+            <point key="canvasLocation" x="317" y="318"/>
         </tableViewCell>
     </objects>
 </document>

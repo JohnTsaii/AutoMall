@@ -22,11 +22,39 @@ class AMHTTPRequest: AFHTTPRequestOperationManager {
         } else {
             super.init(baseURL: NSURL(string: BaseImageURL))
         }
-        
-        self.requestSerializer = AFHTTPRequestSerializer()
-        self.responseSerializer = AFHTTPResponseSerializer()
+//        self.requestSerializer = AFHTTPRequestSerializer()
+//        self.responseSerializer = AFHTTPResponseSerializer()
     }
     
+    /**
+    get 请求
+    */
+    class func GET(url:String, parameters: Dictionary<String, AnyObject>?,success:((AFHTTPRequestOperation!, AnyObject!) -> Void)?,failure:((AFHTTPRequestOperation!,NSError!) -> Void)?) {
+        AMHTTPRequest.sharedManager.GET(url, parameters:auth(parameters), success:success, failure: failure)
+    }
+    
+    /**
+    post 请求
+    */
+    class func POST(url:String, parameters: Dictionary<String, AnyObject>?,success:((AFHTTPRequestOperation!, AnyObject!) -> Void)?,failure:((AFHTTPRequestOperation!,NSError!) -> Void)?) {
+        
+        AMHTTPRequest.sharedManager.POST(url, parameters:auth(parameters), success:success, failure: failure)
+    }
+    
+    /**
+    添加auth 验证
+    */
+    class func auth(var para:Dictionary<String, AnyObject>?) -> Dictionary<String, AnyObject>! {
+        if let _ = para {
+            
+        } else {
+            para = Dictionary()
+        }
+        if UserBase.user().isLogined {
+            para?["auth"] = UserBase.user().token
+        }
+        return para
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

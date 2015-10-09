@@ -11,7 +11,7 @@ pod 'MJExtension', '~> 2.5.9'
 pod 'Masonry'
 pod 'MJRefresh'
 pod 'SDWebImage'
-pod 'SVProgressHUD', '~> 1.1.1'
+pod 'MBProgressHUD'
 
 end
 

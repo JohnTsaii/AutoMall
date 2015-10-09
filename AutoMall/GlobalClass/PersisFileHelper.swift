@@ -9,12 +9,12 @@
 import UIKit
 
 class PersisFileHelper: NSObject {
-    static func persitance(filePath :String, object:AnyObject) {
+    class func persitance(filePath :String, object:AnyObject) {
        let data = NSKeyedArchiver.archivedDataWithRootObject(object)
         data.writeToFile(filePath, atomically: true)
     }
     
-    static func getPersistanceObj(filePath :String) -> AnyObject? {
+    class func getPersistanceObj(filePath :String) -> AnyObject? {
         let obj = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath);
         return obj
     }

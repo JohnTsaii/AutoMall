@@ -8,7 +8,7 @@
         <!--Mine View Controller-->
         <scene sceneID="0QS-YS-Fly">
             <objects>
-                <tableViewController id="T9U-bM-FYa" customClass="MineViewController" customModule="AutoMall" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MineViewController" id="T9U-bM-FYa" customClass="MineViewController" customModule="AutoMall" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PfN-uk-aT0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,32 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dd2-aE-4cU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="176"/>
+            <point key="canvasLocation" x="323" y="180"/>
+        </scene>
+        <!--My Collection View Controller-->
+        <scene sceneID="7Zz-yz-koK">
+            <objects>
+                <viewController id="gME-uN-IMM" customClass="MyCollectionViewController" customModule="AutoMall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Tk-gA-53u"/>
+                        <viewControllerLayoutGuide type="bottom" id="4e1-5S-CqI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="urw-xS-O85">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z49-cS-j7i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAI-Lh-DnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="182"/>
         </scene>
     </scenes>
 </document>

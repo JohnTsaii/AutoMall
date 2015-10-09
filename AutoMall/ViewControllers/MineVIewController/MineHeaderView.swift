@@ -10,19 +10,31 @@ import UIKit
 
 class MineHeaderView: UIView {
     
-    private var headerBgImageV:UIImageView = UIImageView(image: UIImage(named: "name"));
-    var loginButton:UIButton?;
-    var registButton:UIButton?;
-    var userNameLabel:UILabel?;
+    @IBOutlet var userNameLb:UILabel!
+    @IBOutlet var loginBtn:UIButton!
+    @IBOutlet var registBtn:UIButton!
     
-    
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "logedSuccess:", name: AMLoginSuccessNotification, object: nil)
+        
     }
-    */
-
+    
+    //MAKR: notification
+    func logedSuccess() {
+        layoutIfNeeded()
+        userNameLb.text = UserBase.user().userName
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if UserBase.user().isLogined {
+            loginBtn.hidden = true
+            registBtn.hidden = true
+            userNameLb.hidden = false
+        } else {
+            loginBtn.hidden = false
+            registBtn.hidden = false
+            userNameLb.hidden = true
+        }
+    }
 }

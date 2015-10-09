@@ -27,7 +27,7 @@ class MainViewController: UITabBarController {
     }()
     
     lazy var mineVC: MineViewController = {
-        return MineViewController()
+        return MyStoryboard.sb().instantiateViewControllerWithIdentifier("MineViewController") as! MineViewController
     }()
     
     lazy var homeNav:UINavigationController = {

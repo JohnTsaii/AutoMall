@@ -32,7 +32,6 @@
 		D082B9271BC60B210029391C /* UIView+Designed.m in Sources */ = {isa = PBXBuildFile; fileRef = D082B9261BC60B210029391C /* UIView+Designed.m */; settings = {ASSET_TAGS = (); }; };
 		D082B92B1BC60B370029391C /* UIView+AwakeNib.m in Sources */ = {isa = PBXBuildFile; fileRef = D082B92A1BC60B370029391C /* UIView+AwakeNib.m */; settings = {ASSET_TAGS = (); }; };
 		D082B9421BC619B00029391C /* UIViewFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9411BC619B00029391C /* UIViewFit.swift */; settings = {ASSET_TAGS = (); }; };
-		D082B9441BC61B480029391C /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9431BC61B480029391C /* UIScreenExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B9481BC63B3C0029391C /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B9461BC63B3C0029391C /* MyCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B94C1BC63D000029391C /* MyCollectionShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B94B1BC63D000029391C /* MyCollectionShopCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B94E1BC63E050029391C /* MyCollectionProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082B94D1BC63E050029391C /* MyCollectionProductViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -728,7 +727,6 @@
 				D0C605C81BB92347005E0086 /* BaseFilePath.swift in Sources */,
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
-				D082B9441BC61B480029391C /* UIScreenExtension.swift in Sources */,
 				D082B9421BC619B00029391C /* UIViewFit.swift in Sources */,
 				D082B97D1BC667140029391C /* AMOrderLine.swift in Sources */,
 				D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */,

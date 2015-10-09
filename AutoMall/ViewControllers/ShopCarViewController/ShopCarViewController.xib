@@ -21,7 +21,46 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JN7-9K-JU9" userLabel="left">
                             <rect key="frame" x="0.0" y="0.0" width="213" height="55"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn2-ru-nBR">
+                                    <rect key="frame" x="45" y="19" width="28" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：1234.22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seg-hZ-rPi">
+                                    <rect key="frame" x="95" y="17" width="113" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNq-Ep-hkp">
+                                    <rect key="frame" x="12" y="13" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="APz-bb-jBx"/>
+                                        <constraint firstAttribute="height" constant="30" id="lJe-Fb-Ktj"/>
+                                    </constraints>
+                                    <state key="normal" title="选"/>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="HNq-Ep-hkp" firstAttribute="leading" secondItem="JN7-9K-JU9" secondAttribute="leading" constant="12" id="1oQ-d2-Mgu"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="seg-hZ-rPi" secondAttribute="trailing" id="2UZ-A0-Ujw"/>
+                                <constraint firstItem="seg-hZ-rPi" firstAttribute="centerY" secondItem="kn2-ru-nBR" secondAttribute="centerY" id="6gF-pb-R8m"/>
+                                <constraint firstItem="seg-hZ-rPi" firstAttribute="leading" secondItem="kn2-ru-nBR" secondAttribute="trailing" priority="750" constant="22" id="8dg-Vp-mBH"/>
+                                <constraint firstItem="seg-hZ-rPi" firstAttribute="leading" secondItem="kn2-ru-nBR" secondAttribute="trailing" priority="750" constant="22" id="dXa-8H-OSw"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="seg-hZ-rPi" secondAttribute="trailing" id="fll-sR-oDh"/>
+                                <constraint firstItem="kn2-ru-nBR" firstAttribute="leading" secondItem="HNq-Ep-hkp" secondAttribute="trailing" constant="3" id="h0m-t7-5lL"/>
+                                <constraint firstItem="HNq-Ep-hkp" firstAttribute="centerY" secondItem="JN7-9K-JU9" secondAttribute="centerY" id="hSI-JU-dIY"/>
+                                <constraint firstItem="kn2-ru-nBR" firstAttribute="centerY" secondItem="HNq-Ep-hkp" secondAttribute="centerY" id="mB0-Vk-Q5y"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="2UZ-A0-Ujw"/>
+                                    <exclude reference="8dg-Vp-mBH"/>
+                                </mask>
+                            </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWs-Cj-rsM">
                             <rect key="frame" x="213" y="0.0" width="107" height="55"/>

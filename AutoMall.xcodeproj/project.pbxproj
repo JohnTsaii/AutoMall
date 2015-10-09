@@ -24,6 +24,7 @@
 		52AB6E111BA5B62B004B8D3E /* AMProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E101BA5B62B004B8D3E /* AMProduct.swift */; };
 		52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB6E121BB19CA9004B8D3E /* AMAdvertising.swift */; };
 		60498D0383F61BD440FB0F51 /* libPods-AutoMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D5C940865B17A3538A5E84 /* libPods-AutoMall.a */; };
+		68F956911BC7F24A00D0D571 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F956901BC7F24A00D0D571 /* UIScreenExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		D07E193A1BB50ADE0092C1CE /* ShopCarHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E19391BB50ADE0092C1CE /* ShopCarHeaderFooterView.swift */; settings = {ASSET_TAGS = (); }; };
 		D082B9181BC6080C0029391C /* MineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D082B9171BC6080C0029391C /* MineHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 		D082B9221BC60A610029391C /* DesignedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D082B91D1BC60A600029391C /* DesignedButton.m */; settings = {ASSET_TAGS = (); }; };
@@ -115,6 +116,7 @@
 		52AB6E0E1BA52B39004B8D3E /* AMHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMHomeModel.swift; sourceTree = "<group>"; };
 		52AB6E101BA5B62B004B8D3E /* AMProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMProduct.swift; sourceTree = "<group>"; };
 		52AB6E121BB19CA9004B8D3E /* AMAdvertising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAdvertising.swift; sourceTree = "<group>"; };
+		68F956901BC7F24A00D0D571 /* UIScreenExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		A3419E18DBA05A391457B162 /* Pods-AutoMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoMall/Pods-AutoMall.release.xcconfig"; sourceTree = "<group>"; };
 		D07E19391BB50ADE0092C1CE /* ShopCarHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarHeaderFooterView.swift; sourceTree = "<group>"; };
 		D082B9171BC6080C0029391C /* MineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeaderView.xib; sourceTree = "<group>"; };
@@ -129,7 +131,6 @@
 		D082B9291BC60B370029391C /* UIView+AwakeNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AwakeNib.h"; sourceTree = "<group>"; };
 		D082B92A1BC60B370029391C /* UIView+AwakeNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AwakeNib.m"; sourceTree = "<group>"; };
 		D082B9411BC619B00029391C /* UIViewFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFit.swift; sourceTree = "<group>"; };
-		D082B9431BC61B480029391C /* UIScreenExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = ../../ShenKHealthy/UIScreenExtension.swift; sourceTree = "<group>"; };
 		D082B9461BC63B3C0029391C /* MyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 		D082B94B1BC63D000029391C /* MyCollectionShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionShopCell.swift; sourceTree = "<group>"; };
 		D082B94D1BC63E050029391C /* MyCollectionProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionProductViewController.swift; sourceTree = "<group>"; };
@@ -399,7 +400,7 @@
 				D082B9291BC60B370029391C /* UIView+AwakeNib.h */,
 				D082B92A1BC60B370029391C /* UIView+AwakeNib.m */,
 				D082B9411BC619B00029391C /* UIViewFit.swift */,
-				D082B9431BC61B480029391C /* UIScreenExtension.swift */,
+				68F956901BC7F24A00D0D571 /* UIScreenExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -728,6 +729,7 @@
 				5206E88D1B94325B000F46B6 /* AMAppDelegate.swift in Sources */,
 				52AB6E131BB19CA9004B8D3E /* AMAdvertising.swift in Sources */,
 				D082B9421BC619B00029391C /* UIViewFit.swift in Sources */,
+				68F956911BC7F24A00D0D571 /* UIScreenExtension.swift in Sources */,
 				D082B97D1BC667140029391C /* AMOrderLine.swift in Sources */,
 				D0C605C01BB91C0D005E0086 /* PersisFileHelper.swift in Sources */,
 				D092FB271BB3A08F00162251 /* MineHeaderView.swift in Sources */,

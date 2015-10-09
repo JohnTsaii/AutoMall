@@ -10,11 +10,10 @@ import UIKit
 
 class ReturnListCell: UITableViewCell {
     
-    @IBOutlet weak var codeLb: UILabel!
-    @IBOutlet weak var nameLb: UILabel!
-    @IBOutlet weak var formatLb: UILabel!
-    @IBOutlet weak var priceLb: UILabel!
-    @IBOutlet weak var numLb: UILabel!
+    @IBOutlet weak var codeLb: UILabel!  //编码
+    @IBOutlet weak var nameLb: UILabel!  //名称
+    @IBOutlet weak var priceLb: UILabel! //价格
+    @IBOutlet weak var numLb: UILabel!   //数量
 
     override func awakeFromNib() {
         super.awakeFromNib()

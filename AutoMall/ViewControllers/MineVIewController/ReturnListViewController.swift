@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 退货申请
 class ReturnListViewController: UITableViewController {
     
     var dataSource:[AMOrderLine] = []
@@ -19,19 +20,23 @@ class ReturnListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+        loadData()
     }
     
     func loadData() {
         AMHTTPRequest.GET("mobile/getCanReturnOrder", parameters: nil, success: { (let operation: AFHTTPRequestOperation!, let response:AnyObject!) -> Void in
-            let dict:Dictionary<String,AnyObject> = response as! Dictionary<String,AnyObject>
+            let dict = response as! Dictionary<String,AnyObject>
             if let status = dict["status"]?.integerValue {
                 if status == 1 {
                     if let dataDict = dict["data"] as? NSDictionary {
                         //获取到的数据
-                        if let shops = dataDict["favorys"] as? NSArray {
-                            for item in AMOrderLine.objectArrayWithKeyValuesArray(shops) {
-                                self.dataSource.append(item as! AMOrderLine)
+                        if let orders = dataDict["Orderlist"] as? NSArray {
+                            for order in orders {
+                                if let orderlines = order["orderlines"] as? NSArray {
+                                    for orderline in AMOrderLine.objectArrayWithKeyValuesArray(orderlines) {
+                                        self.dataSource.append(orderline as! AMOrderLine)
+                                    }
+                                }
                             }
                         }
                     }
@@ -39,8 +44,9 @@ class ReturnListViewController: UITableViewController {
                     //失败
                 }
             }
+            self.tableView.reloadData()
             }, failure: { (let operation:AFHTTPRequestOperation!,let error:NSError!) -> Void in
-                
+            self.tableView.reloadData()
         })
     }
 
@@ -59,8 +65,12 @@ class ReturnListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! ReturnListCell
+        let item = dataSource[indexPath.row]
+        cell.codeLb.text = item.p_no
+        cell.nameLb.text = item.name
+        cell.priceLb.text = "\(item.shop_price)"
+        cell.numLb.text = "\(item.quantity)"
         return cell
     }
 

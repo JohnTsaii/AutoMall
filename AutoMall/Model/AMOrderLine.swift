@@ -16,6 +16,7 @@ class AMOrderLine: NSObject {
     var type:Int? //商品类型
     var shop_price:CGFloat? //商品价格
     var quantity:Int? //商品数量
+    var name:String? //商品名称
     
     override init() {
         super.init()
@@ -26,5 +27,6 @@ class AMOrderLine: NSObject {
         type = 0
         shop_price = 0
         quantity = 0
+        name = nil
     }
 }

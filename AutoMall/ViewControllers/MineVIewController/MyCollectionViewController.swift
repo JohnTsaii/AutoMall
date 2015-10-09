@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 我的收藏
 class MyCollectionViewController: UIViewController {
     
     @IBOutlet var contentView:UIView!

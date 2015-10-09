@@ -7,6 +7,10 @@
 */
 //按照时间倒序排列新添加放在文件头部
 
+-sxf, 2015/10/8
+添加了UIView+Designed.h分类，可以直接在xib上直接设置cornerRaduis和阴影等属性，
+添加了UIView+AwakeNib.h分类，方便初始化xib视图
+添加了UIViewFit扩展，方便获取宽高
 
 -sxf, 2015/9/30
 添加了HUD视图AMProgressHUD，（等待视图，成功失败状态视图）,添加了轻量级的本地缓存类PersisFileHelper，PersisUserDefault

@@ -8,11 +8,13 @@
 
 import UIKit
 
-public let LoginSuccessNotification:String = "LoginSuccessNotification"
-public let LoginFailedNotification:String = "loginFailedNotification"
+public let AMLoginSuccessNotification:String = "LoginSuccessNotification"
+public let AMLoginFailedNotification:String = "loginFailedNotification"
+public let AMLogoutSuccessNotification:String = "AMLogoutSuccessNotification"
 
 enum UserKey:String {
     case token = "UserKeyToken"
+    case userName = "UserKeyUserName"
 }
 
 class UserBase: NSObject {
@@ -40,12 +42,23 @@ class UserBase: NSObject {
         }
     }
     
+    /// token
     var token:String? {
         get {
             return PersisUserDefault.objForKey(UserKey.token.rawValue) as? String
         }
         set {
-            PersisUserDefault.setObj(newValue, forKey: UserKey.token.rawValue)
+            PersisUserDefault.setObj(newValue, forKey:UserKey.token.rawValue)
+        }
+    }
+    
+    /// 用户名
+    var userName:String? {
+        get {
+            return PersisUserDefault.objForKey(UserKey.userName.rawValue) as? String
+        }
+        set {
+            PersisUserDefault.setObj(newValue, forKey:UserKey.userName.rawValue)
         }
     }
     
@@ -65,6 +78,7 @@ class UserBase: NSObject {
                     success = true
                     if let dataDict = dict["data"] as? NSDictionary {
                         UserBase.user().token = dataDict["token"] as? String
+                        UserBase.user().userName = userName
                     }
                 } else {
                     //失败
@@ -74,9 +88,9 @@ class UserBase: NSObject {
                 }
             }
             if success {
-                NSNotificationCenter.defaultCenter().postNotificationName(LoginSuccessNotification, object:nil)
+                NSNotificationCenter.defaultCenter().postNotificationName(AMLoginSuccessNotification, object:nil)
             } else {
-                NSNotificationCenter.defaultCenter().postNotificationName(LoginFailedNotification, object:nil)
+                NSNotificationCenter.defaultCenter().postNotificationName(AMLoginFailedNotification, object:nil)
                 if let _ = msg {
                     //失败有提示
                     AMProgressHUD.showFailed(msg!)

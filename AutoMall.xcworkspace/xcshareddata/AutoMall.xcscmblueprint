@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "15C8E7BFD73E1FFDD85828C1B9F4E5DAB78286CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "15C8E7BFD73E1FFDD85828C1B9F4E5DAB78286CA" : 0,
+    "5DCD37F58FF1DD065D55CDA380C273824454EA8A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1B09C0C4-8381-484E-8E1F-0C54CD8CBA65",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "15C8E7BFD73E1FFDD85828C1B9F4E5DAB78286CA" : "AutoMall\/",
+    "5DCD37F58FF1DD065D55CDA380C273824454EA8A" : "ShenKHealthy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AutoMall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AutoMall.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnTsaii\/AutoMall.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "15C8E7BFD73E1FFDD85828C1B9F4E5DAB78286CA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:owls\/ShenKHealthy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5DCD37F58FF1DD065D55CDA380C273824454EA8A"
+    }
+  ]
+}

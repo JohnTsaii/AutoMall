@@ -39,8 +39,9 @@ class MineViewController: UITableViewController {
     }
     
     func configView() {
-        
-        headerView = MineHeaderView()
+        headerView = MineHeaderView.sk_viewFromNib()
+        let htemp = UIScreen.width()/3
+        headerView?.frame = CGRectMake(0, 0, UIScreen.width(), htemp)
         tableView.tableHeaderView = headerView
         tableView.registerNib(UINib(nibName: "MineCommonCell", bundle: nil), forCellReuseIdentifier: "MineCommonCell")
         tableView.registerNib(UINib(nibName: "MineOrderCell", bundle: nil), forCellReuseIdentifier: "MineOrderCell")
